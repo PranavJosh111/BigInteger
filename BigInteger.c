@@ -35,7 +35,7 @@ void insert_tail(struct BigInteger *num, int element) {
   while (itr->next != NULL) {
     itr = itr->next;
   }
-  itr->next = temp;
+  itr->next = t;
 }
 
 // Function to calculate the length of a linked list
