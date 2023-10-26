@@ -92,7 +92,7 @@ struct node *reverse(struct node *head) {
   struct node *prev = NULL, *front = NULL, *current = head;
   while (current != NULL) {
     front = current->next;
-    current->next = back;
+    current->next = prev;
     prev = current;
     current = front;
   }
